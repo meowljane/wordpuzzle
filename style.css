@@ -14,7 +14,7 @@
 .no {
   position: absolute;
   visibility: hidden;
-  top: 260px;
+  top: 300px;
   width: 0px;
   height: 0px;
   padding: 20px 10px;
@@ -117,12 +117,13 @@ div.leftclue {
 
 div.btn {
   position: absolute;
-  top:200px;
-  left: 65%;
-  margin-left: 0px;
-  width:1px;
-  height: 1px;
+  top: 290px;
+  left: 50%;
+  margin-left: -200px;
+  width: 300px;
+  height: 150px;
 }
+
 
 #result {
   position: relative;
