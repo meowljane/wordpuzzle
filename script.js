@@ -1,4 +1,3 @@
-document.write (_nickname);
 
 var addclue = function() {
   var up = [$('div.upclue[data-j=1]').text('L\nI\nN\nD\nS\nA\nY'),
