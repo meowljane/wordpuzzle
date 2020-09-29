@@ -95,7 +95,7 @@ $('.no').css('visibility', 'hidden');
     if (check() == true) {
       $('#result').text("");
       alert("그림만 본다고 다 된 것 같나요?");
-	    $("body").css("background-color","black");
+	    $("body").css("background-color","#000000");
 alert("이 그림이 그냥 토끼로만 보여요?");
 alert("보이는게 다가 아니에요");
 alert("민지가 마냥 행복해 보였어요?");
