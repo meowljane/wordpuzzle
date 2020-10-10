@@ -70,8 +70,7 @@ $('.no').css('visibility', 'visible');
 };
 
 
-var whiteaudio = document.getElementById("white");
-var blackaudio = document.getElementById("black");
+
 
 var btn = function() {
   $('#reset').bind('click', function() {
@@ -99,7 +98,9 @@ $('.no').css('visibility', 'hidden');
     if (check() == true) {
       $('#result').text("");
       alert("그림만 본다고 다 된 것 같나요?");
-	    ("body").css("background-color","#000000");
+	    $("body").css("background-color","#000000");
+	    var whiteaudio = document.getElementById("white");
+var blackaudio = document.getElementById("black");
 	    blackaudio.play();
 	    whiteaudio.stop();
 alert("이 그림이 그냥 귀엽게만 보여요?");
