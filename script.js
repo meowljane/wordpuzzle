@@ -69,6 +69,10 @@ $('.no').css('visibility', 'visible');
   return true;
 };
 
+
+var whiteaudio = document.getElementById("white");
+var blackaudio = document.getElementById("black");
+
 var btn = function() {
   $('#reset').bind('click', function() {
     $('div.grid').each(function() {
@@ -95,10 +99,12 @@ $('.no').css('visibility', 'hidden');
     if (check() == true) {
       $('#result').text("");
       alert("그림만 본다고 다 된 것 같나요?");
-	    $("body").css("background-color","#000000");
+	    ("body").css("background-color","#000000");
+	    blackaudio.play();
+	    whiteaudio.stop();
 alert("이 그림이 그냥 귀엽게만 보여요?");
 alert("보이는게 다가 아니에요");
-alert("민지가 마냥 행복해 보였어요?");
+alert("푸름이가 마냥 행복해 보였어요?");
 alert("큰 잘못 하고 계신거예요");
 alert("빨리 뭐라도 해봐요");
 alert("옆에 글자가 그냥 있는걸로 보여요?");
@@ -114,7 +120,7 @@ var genGrid = function() {
     var row = $('<div>').attr('class', 'row');
     for (j = 0; j <= 7; j++) {
       if (i == 0 && j == 0) {} else if (i == 0) {
-        var upclue = $('<div>').attr('class', 'upclue');
+        var up= $('<div>').attr('class', 'upclue');
         $(upclue).attr('data-j', j);
         $(row).append($(upclue));
       } else if (j == 0) {
