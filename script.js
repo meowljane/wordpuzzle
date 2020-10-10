@@ -98,7 +98,7 @@ $('.no').css('visibility', 'hidden');
 	    $("body").css("background-color","#000000");
 alert("이 그림이 그냥 귀엽게만 보여요?");
 alert("보이는게 다가 아니에요");
-alert("민지가 마냥 행복해 보였어요?");
+alert("푸름이가 마냥 행복해 보였어요?");
 alert("큰 잘못 하고 계신거예요");
 alert("빨리 뭐라도 해봐요");
 alert("옆에 글자가 그냥 있는걸로 보여요?");
