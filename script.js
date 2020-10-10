@@ -1,4 +1,3 @@
-
 var addclue = function() {
   var up = [$('div.upclue[data-j=1]').text('L\nI\nN\nD\nS\nA\nY'),
     $('div.upclue[data-j=2]').text('O\nK\nI\nN\nA\nW\nA'),
@@ -20,7 +19,6 @@ var addclue = function() {
     up[i].html(up[i].html().replace(/\n/g, '<br/>'));
   }
 };
-
 var tagok = function() {
   var ok = [
     [1, 1, 0, 0, 0, 1, 0],
@@ -41,7 +39,6 @@ var tagok = function() {
     });
   });
 }
-
 var check = function() {
   console.log("check");
   var notok = $('div.grid[ans="notok"]');
@@ -68,10 +65,6 @@ $('.no').css('visibility', 'visible');
   }
   return true;
 };
-
-
-
-
 var btn = function() {
   $('#reset').bind('click', function() {
     $('div.grid').each(function() {
@@ -101,23 +94,24 @@ $('.no').css('visibility', 'hidden');
 	    $("body").css("background-color","#000000");
 alert("이 그림이 그냥 귀엽게만 보여요?");
 alert("보이는게 다가 아니에요");
-alert("푸름이가 마냥 행복해 보였어요?");
+alert("민지가 마냥 행복해 보였어요?");
 alert("큰 잘못 하고 계신거예요");
 alert("빨리 뭐라도 해봐요");
 alert("옆에 글자가 그냥 있는걸로 보여요?");
 alert("다시 읽어보세요");
+alert("답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요답은두번반복해서쓰세요");
+    } else {
  } else {
       $('#result').text(check());
     }
   });
 }
-
 var genGrid = function() {
   for (i = 0; i <= 7; i++) {
     var row = $('<div>').attr('class', 'row');
     for (j = 0; j <= 7; j++) {
       if (i == 0 && j == 0) {} else if (i == 0) {
-        var up= $('<div>').attr('class', 'upclue');
+        var upclue = $('<div>').attr('class', 'upclue');
         $(upclue).attr('data-j', j);
         $(row).append($(upclue));
       } else if (j == 0) {
@@ -153,7 +147,6 @@ $('.no').css('visibility', 'hidden');
     }
   }
 };
-
 $(document).ready(function() {
   genGrid();
   addclue();
